@@ -1,0 +1,13 @@
+.nav{
+    background-color: darkblue;
+    padding: 20px;
+}
+.item{
+    color: white;
+    text-decoration: none;
+}
+.active{
+    padding: 10px;
+    color: chartreuse;
+    text-decoration: none;
+}
