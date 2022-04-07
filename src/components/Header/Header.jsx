@@ -1,10 +1,22 @@
 import s from './Header.module.css'
+import {NavLink} from "react-router-dom";
 
-const Navbar = () => {
+const Header = (props) => {
     return (
         <header className={s.header}>
             <img src='https://www.spacedesk.net/wp-content/themes/datronic/img/logo_spacedesk.png'/>
+
+            <div className={s.loginBlock}>
+                <div>
+                    {props.isAuth
+                        ? <div>
+                            <div>{props.login}</div>
+                            <div>{props.isAuth && <button onClick={props.logout}>Log out</button>}</div>
+                        </div>
+                        : <NavLink to={'/login'}>Login</NavLink>}
+                </div>
+            </div>
         </header>
     )
 }
-export default Navbar;
+export default Header;

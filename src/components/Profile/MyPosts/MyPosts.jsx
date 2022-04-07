@@ -1,36 +1,47 @@
 import s from './MyPosts.module.css'
 import Post from "./Post/Post";
 import React from "react";
+import {Field, reduxForm} from "redux-form";
+import {maxLength, required} from "../../../utils/validators/validators";
+import {Textarea} from "../../Common/FormsControl/FormControls";
 
 
 const MyPosts = (props) => {
 
-    let postElements = props.posts.map(p =>  <Post text={p.text} likeCounts ={p.likeCounts} />)
+    let postElements = props.posts.map(p => <Post key={p.id} text={p.text} likeCounts={p.likeCounts}/>)
 
-    let newPostElement = React.createRef();
-
-    let addPost = () => {
-        props.addPost();
-    }
-    let onPostChange = () =>{
-        let text = newPostElement.current.value;
-        props.updateNewPostText(text);
+    let addPost = (values) => {
+        props.addPost(values.newPostText)
     }
 
     return (
         <div className={s.MyPost}>
-            <div>
-                <textarea ref={newPostElement} value={props.newPostText}  onChange={onPostChange}/>
-            </div>
-            <div>
-                <button onClick={addPost}>
-                    Add
-                </button>
-            </div>
-
-
+            <AddPostFormRedux onSubmit={addPost}/>
             {postElements}
         </div>
     )
 }
+
+const maxLength15 = maxLength(15);
+
+const addPostForm = (props) => {
+    return (
+        <form onSubmit={props.handleSubmit}>
+            <div>
+                <Field
+                    component={Textarea}
+                    name={"newPostText"}
+                    placeholder={"Enter your post"}
+                    validate={[required, maxLength15]}/>
+            </div>
+            <div>
+                <button>Add</button>
+            </div>
+        </form>
+    )
+}
+
+const AddPostFormRedux = reduxForm({form: 'post'})(addPostForm)
+
+
 export default MyPosts;
