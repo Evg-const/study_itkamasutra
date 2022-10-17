@@ -35,9 +35,8 @@ export const authApi ={
     logout(){
         return instance.delete(`auth/login`);
     }
-
-
 }
+
 export const profileAPI ={
     getProfile(userId){
         return  instance.get('profile/' + userId)

@@ -6,7 +6,9 @@ import {maxLength, required} from "../../../utils/validators/validators";
 import {Textarea} from "../../Common/FormsControl/FormControls";
 
 
-const MyPosts = (props) => {
+function MyPosts(props) {
+
+    console.log("RENDER")
 
     let postElements = props.posts.map(p => <Post key={p.id} text={p.text} likeCounts={p.likeCounts}/>)
 
@@ -21,6 +23,7 @@ const MyPosts = (props) => {
         </div>
     )
 }
+
 
 const maxLength15 = maxLength(15);
 
