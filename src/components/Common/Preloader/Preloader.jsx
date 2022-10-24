@@ -4,7 +4,8 @@ import React from "react";
 const Preloader = () => {
     return (
         <div>
-            <img src={spinner}/>
+            <img src={spinner}
+                 alt="Spinner"/>
         </div>
     )
 }

@@ -1,7 +1,6 @@
 import React from 'react';
 import Users from './Users/Users';
 import Preloader from "../../Common/Preloader/Preloader";
-import {requestUsers} from "../../../redux/users-reducer";
 
 class UsersAPIcomponent extends React.Component {
 
@@ -22,8 +21,8 @@ class UsersAPIcomponent extends React.Component {
                     totalCount={this.props.totalCount}
                     pageSize={this.props.pageSize}
                     currentPage={this.props.currentPage}
-                    users={this.props.users}
                     onPageChanged={this.onPageChanged}
+                    users={this.props.users}
                     toggleFollow = {this.props.toggleFollow}
                     isFollowingInProgress={this.props.isFollowingInProgress}
                 />}

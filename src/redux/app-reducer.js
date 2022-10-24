@@ -2,12 +2,9 @@ import {getMyProfile} from "./auth-reducer";
 
 const SET_INITIALIZED_SUCCESS = 'SET_INITIALIZED';
 
-
-
 const initialState = {
     initialized: false
 };
-
 
 const appReducer = (state = initialState, action) => {
     switch (action.type) {
@@ -21,7 +18,7 @@ const appReducer = (state = initialState, action) => {
     }
 }
 
-export const setInitializedSuccess = () =>({type: SET_INITIALIZED_SUCCESS})
+export const setInitializedSuccess = () => ({type: SET_INITIALIZED_SUCCESS})
 
 
 export const initializeApp = () => (dispatch) => {

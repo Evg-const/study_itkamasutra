@@ -1,0 +1,9 @@
+.selectedPage{
+    font-weight: bold;
+    color: red;
+    cursor: pointer;
+}
+.nonSelectedPage{
+    color: green;
+    cursor: pointer;
+}
