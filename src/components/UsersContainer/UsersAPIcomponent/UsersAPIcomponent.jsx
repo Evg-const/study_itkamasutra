@@ -15,8 +15,9 @@ class UsersAPIcomponent extends React.Component {
 
     render() {
         return <>
-            {this.props.isFetching ?
-                <Preloader/> :
+            {this.props.isFetching &&
+                <Preloader/>
+            }
                 <Users
                     totalCount={this.props.totalCount}
                     pageSize={this.props.pageSize}
@@ -25,7 +26,7 @@ class UsersAPIcomponent extends React.Component {
                     users={this.props.users}
                     toggleFollow = {this.props.toggleFollow}
                     isFollowingInProgress={this.props.isFollowingInProgress}
-                />}
+                />
         </>
     }
 }
