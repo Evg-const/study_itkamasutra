@@ -1,10 +1,10 @@
 import s from "./App.module.css";
 import Navbar from "./components/Navbar/Navbar";
-import UsersContainer from "./components/UsersContainer/UsersContainer";
 import {BrowserRouter, Route, Routes} from "react-router-dom"
-import React from "react";
-import DialogsContainer from "./components/Dialogs/DialogsContainer";
-import ProfileContainer from "./components/Profile/ProfileContainer/ProfileContainer";
+import React, { Suspense, lazy } from 'react';
+//import UsersContainer from "./components/UsersContainer/UsersContainer";
+//import DialogsContainer from "./components/Dialogs/DialogsContainer";
+//import ProfileContainer from "./components/Profile/ProfileContainer/ProfileContainer";
 import HeaderContainer from "./components/Header/HeaderContainer";
 import Login from "./components/Login/Login";
 import {connect, Provider} from "react-redux";
@@ -13,6 +13,12 @@ import {compose} from "redux";
 import {initializeApp} from "./redux/app-reducer";
 import Preloader from "./components/Common/Preloader/Preloader";
 import store from "./redux/redux-store";
+const DialogsContainer = lazy(() => import("./components/Dialogs/DialogsContainer"));
+const ProfileContainer = lazy(() => import("./components/Profile/ProfileContainer/ProfileContainer"));
+const UsersContainer = lazy(() => import("./components/UsersContainer/UsersContainer"));
+
+
+
 
 
 class App extends React.Component {
@@ -36,6 +42,7 @@ class App extends React.Component {
                 </div>
 
                 <div className={s.appWrapperContent}>
+                    <Suspense fallback={<Preloader/>}>
                     <Routes>
                         <Route path="/profile/*" element={<ProfileContainer/>}/>
                         <Route path="/dialogs/*" element={<DialogsContainer/>}/>
@@ -45,6 +52,7 @@ class App extends React.Component {
                         {/*<Route path="/music" element={<Dialogs/>}/>*/}
                         {/*<Route path="/settings" element={<Dialogs/>}/>*/}
                     </Routes>
+                    </Suspense>
                 </div>
             </div>
         );
