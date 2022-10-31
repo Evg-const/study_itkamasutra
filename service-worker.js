@@ -14,7 +14,7 @@
 importScripts("https://storage.googleapis.com/workbox-cdn/releases/3.6.3/workbox-sw.js");
 
 importScripts(
-  "/study_itkamasutra/precache-manifest.24aff44c3a3393e3d8af8a140d734659.js"
+  "/study_itkamasutra/precache-manifest.2b1638a064d51e5188914ce74874f9ba.js"
 );
 
 workbox.clientsClaim();
