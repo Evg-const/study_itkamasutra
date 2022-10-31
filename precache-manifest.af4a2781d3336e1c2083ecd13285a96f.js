@@ -1,11 +1,11 @@
 self.__precacheManifest = [
   {
-    "revision": "c86f41070a05168f25d4",
+    "revision": "cfb86a6da18bc78c2d61",
     "url": "/study_itkamasutra/static/css/main.78f35a7b.chunk.css"
   },
   {
-    "revision": "c86f41070a05168f25d4",
-    "url": "/study_itkamasutra/static/js/main.c86f4107.chunk.js"
+    "revision": "cfb86a6da18bc78c2d61",
+    "url": "/study_itkamasutra/static/js/main.cfb86a6d.chunk.js"
   },
   {
     "revision": "f95deeb71935b450e4cc",
@@ -48,7 +48,7 @@ self.__precacheManifest = [
     "url": "/study_itkamasutra/static/media/UserImage.d3758a57.png"
   },
   {
-    "revision": "8d34ec88e485bab257e361d6be9453c0",
+    "revision": "9831de6e2082e23e51b89cf662279f3d",
     "url": "/study_itkamasutra/index.html"
   }
 ];
