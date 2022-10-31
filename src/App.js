@@ -1,6 +1,6 @@
 import s from "./App.module.css";
 import Navbar from "./components/Navbar/Navbar";
-import {BrowserRouter, Route, Routes} from "react-router-dom"
+import {HashRouter, Route, Routes} from "react-router-dom"
 import React, { Suspense, lazy } from 'react';
 //import UsersContainer from "./components/UsersContainer/UsersContainer";
 //import DialogsContainer from "./components/Dialogs/DialogsContainer";
@@ -70,10 +70,10 @@ let AppContainer = compose(
                 {initializeApp}))(App);
 
 let SamuraiJSApp = (props) => {
-    return <BrowserRouter>
+    return <HashRouter>
         <Provider store={store}>
             <AppContainer/>
         </Provider>
-    </BrowserRouter>
+    </HashRouter>
 }
 export default SamuraiJSApp;
