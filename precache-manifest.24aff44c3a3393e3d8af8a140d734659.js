@@ -1,19 +1,19 @@
 self.__precacheManifest = [
   {
-    "revision": "cfb86a6da18bc78c2d61",
+    "revision": "b4bd1a71b9c4cec17cb7",
     "url": "/study_itkamasutra/static/css/main.78f35a7b.chunk.css"
   },
   {
-    "revision": "cfb86a6da18bc78c2d61",
-    "url": "/study_itkamasutra/static/js/main.cfb86a6d.chunk.js"
+    "revision": "b4bd1a71b9c4cec17cb7",
+    "url": "/study_itkamasutra/static/js/main.b4bd1a71.chunk.js"
   },
   {
-    "revision": "f95deeb71935b450e4cc",
+    "revision": "f9c98b327173c8ef8e98",
     "url": "/study_itkamasutra/static/css/1.478b30ec.chunk.css"
   },
   {
-    "revision": "f95deeb71935b450e4cc",
-    "url": "/study_itkamasutra/static/js/1.f95deeb7.chunk.js"
+    "revision": "f9c98b327173c8ef8e98",
+    "url": "/study_itkamasutra/static/js/1.f9c98b32.chunk.js"
   },
   {
     "revision": "4dc13e4ba2731e32bd4a",
@@ -24,20 +24,20 @@ self.__precacheManifest = [
     "url": "/study_itkamasutra/static/js/2.4dc13e4b.chunk.js"
   },
   {
-    "revision": "aa891bdb59f935c46804",
+    "revision": "951bc06d0a2899e6775a",
     "url": "/study_itkamasutra/static/css/3.7a4a42e8.chunk.css"
   },
   {
-    "revision": "aa891bdb59f935c46804",
-    "url": "/study_itkamasutra/static/js/3.aa891bdb.chunk.js"
+    "revision": "951bc06d0a2899e6775a",
+    "url": "/study_itkamasutra/static/js/3.951bc06d.chunk.js"
   },
   {
-    "revision": "4cfde6bb7ba72d16b656",
-    "url": "/study_itkamasutra/static/js/4.4cfde6bb.chunk.js"
+    "revision": "c956c1d82a6c5309bbf4",
+    "url": "/study_itkamasutra/static/js/4.c956c1d8.chunk.js"
   },
   {
-    "revision": "fb031dd6665d5a4b9cb2",
-    "url": "/study_itkamasutra/static/js/runtime~main.fb031dd6.js"
+    "revision": "5587972cdb19c517f2d8",
+    "url": "/study_itkamasutra/static/js/runtime~main.5587972c.js"
   },
   {
     "revision": "d362efff4520f51b4a1bb6ec75c8225c",
@@ -48,7 +48,7 @@ self.__precacheManifest = [
     "url": "/study_itkamasutra/static/media/UserImage.d3758a57.png"
   },
   {
-    "revision": "9831de6e2082e23e51b89cf662279f3d",
+    "revision": "16b061162542f3a6091acbfe1d6f95a5",
     "url": "/study_itkamasutra/index.html"
   }
 ];
